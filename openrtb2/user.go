@@ -89,7 +89,7 @@ type User struct {
 	//   Extended IDs
 	//   Custom field for Pubmatic
 	//   https://community.pubmatic.com/display/PA/OpenRTB+2.5+Bid+Request+Objects+and+Parameters
-	Eids []Eid `json:"eids,omtempty"`
+	Eids []Eid `json:"eids,omitempty"`
 
 	// Attribute:
 	//   ext
