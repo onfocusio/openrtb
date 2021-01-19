@@ -8,4 +8,4 @@ require (
 	github.com/onsi/gomega v1.10.4
 )
 
-replace github.com/mxmCherry/openrtb v13.0.0+incompatible => github.com/onfocusio/openrtb v13.0.0-onfocus.3+incompatible
+replace ./github.com/mxmCherry/openrtb => ./github.com/onfocusio/openrtb
