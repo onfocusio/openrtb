@@ -1,4 +1,4 @@
-module github.com/onfocusio/openrtb/native1
+module github.com/onfocusio/openrtb
 
 go 1.15
 
