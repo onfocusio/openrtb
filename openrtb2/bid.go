@@ -1,6 +1,9 @@
 package openrtb2
 
-import "encoding/json"
+import (
+	"encoding/json"
+	native1 "github.com/mxmCherry/openrtb/native1/response"
+)
 
 // 4.2.3 Object: Bid
 //
@@ -99,6 +102,15 @@ type Bid struct {
 	//   supersedes the win notice if markup is included in both.
 	//   Substitution macros (Section 4.4) may be included.
 	AdM string `json:"adm,omitempty"`
+
+	// Attribute:
+	//   adm_native
+	// Type:
+	//   object
+	// Description:
+	//   Optional response for BidSwitch Native
+	//	 https://protocol.bidswitch.com/ssp-protocol/ssp-response-native-object.html
+	AdMNative native1.Response `json:"adm_native,omitempty"`
 
 	// Attribute:
 	//   adid
