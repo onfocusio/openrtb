@@ -113,6 +113,14 @@ type Bid struct {
 	AdMNative native1.Response `json:"adm_native,omitempty"`
 
 	// Attribute:
+	//   admobject
+	// Type:
+	//   object
+	// Description:
+	//   Optional response for Rubicon Native
+	AdMObject NativeAdMObject `json:"admobject,omitempty"`
+
+	// Attribute:
 	//   adid
 	// Type:
 	//   string
@@ -288,4 +296,8 @@ type Bid struct {
 	// Description:
 	//   Placeholder for bidder-specific extensions to OpenRTB
 	Ext json.RawMessage `json:"ext,omitempty"`
+}
+
+type NativeAdMObject struct {
+	Native native1.Response `json:"native"`
 }
