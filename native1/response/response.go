@@ -36,7 +36,7 @@ type Response struct {
 	//   1.2
 	// Description:
 	//   Version of the Native Markup version in use.
-	Ver string `json:"ver,omitempty"`
+	Ver interface{} `json:"ver,omitempty"`
 
 	// Field:
 	//   assets
