@@ -27,7 +27,7 @@ type Native struct {
 	// Description:
 	// 		Native Struct for BidSwitch
 	//		https://protocol.bidswitch.com/ssp-protocol/ssp-native-request.html
-	RequestNative native1.Request `json:"request_native"`
+	RequestNative native1.Request `json:"request_native,omitempty"`
 
 	// Attribute:
 	//   requestobj
@@ -35,7 +35,7 @@ type Native struct {
 	//   object; required
 	// Description:
 	// 		Native Struct for Rubicon
-	RequestObj native1.Request `json:"requestobj"`
+	RequestObj native1.Request `json:"requestobj,omitempty"`
 
 	// Attribute:
 	//   request
